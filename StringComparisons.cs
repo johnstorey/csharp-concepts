@@ -11,9 +11,9 @@ namespace Concept.UnitTests.String
    [Fact]
    public void OrdinalComparisonByUpperCaseThenLowerCase()
    {
-     // "atom" > "Atom"
+     // "atom" < "Atom"
      var result = System.String.CompareOrdinal("atom", "Atom");
-     Assert.False(result < 0, "atom GT Atom");
+     Assert.False(result < 0, "atom LT Atom");
 
      // "atom" GT "Zambia" !
      result = System.String.CompareOrdinal("atom", "Zambia");
